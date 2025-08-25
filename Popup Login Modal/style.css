@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to bottom, #0b224a, #1f3976);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.btn {
+  background-color: #ff6b00;
+  color: #fff9f9;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  transition: background-color 0.5s ease;
+}
+
+.btn:hover {
+  background-color: #e65a00;
+}
+
+.container .access-btn {
+  margin-bottom: 50px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: popup 0.5s linear 0s forwards;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  margin: 70px auto;
+  padding: 35px;
+  border-radius: 10px;
+  max-width: 375px;
+  width: 95%;
+  background-color: #0f1d40;
+  text-align: left;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .modal-content {
+    padding: 35px 20px;
+  }
+}
+
+.shield {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal-content h2 {
+  font-family: "Raleway", sans-serif;
+  color: #fff9f9;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.modal-content label {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff9f9b9;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+  outline: none;
+  border: none;
+  background-color: #00081d;
+  color: #fff9f9;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  height: 45px;
+  padding: 0px 20px 0px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="password"]:focus {
+  border: 2px solid #fff9f9;
+  box-shadow: 0 0 5px rgba(255, 107, 0, 0.5);
+}
+
+.modal-content input[type="text"]::placeholder,
+.modal-content input[type="password"]::placeholder {
+  color: #fff9f9;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.remember-me input[type="checkbox"] {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+.remember-me label {
+  margin-bottom: 0px;
+  cursor: pointer;
+  color: #fff9f969;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.dashboard-btn {
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.forgot {
+  text-align: center;
+  font-size: 14px;
+  color: #fff9f9b9;
+  cursor: pointer;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 33px;
+  width: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  font-size: 25px;
+  color: #fff9f9;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.close:hover {
+  background-color: #0000007e;
+}

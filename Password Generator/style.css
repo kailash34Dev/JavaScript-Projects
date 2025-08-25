@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #002339;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 7% 0 0 12%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+        margin: 15% auto 0;
+    }
+}
+
+.container h1 {
+    font-size: 2.7rem;
+    line-height: 1.2;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+}
+
+@media (max-width: 505px) {
+    .container h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 8px;
+}
+
+@media (max-width: 470px) {
+    .container h1 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    .container h1 span {
+        border-bottom: none;
+    }
+}
+
+.password-box {
+    width: 60%;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+@media (max-width: 600px) {
+    .password-box {
+        width: 100%;
+    }
+}
+
+.password-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    color: #333;
+    font-size: 18px;
+}
+
+.password-box i {
+    color: #019f55;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.password-box .fa-copy::after {
+    content: "Copied";
+    background-color: #019f55;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 7px 12px;
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    display: none;
+}
+
+.password-box .fa-copy.copied::after {
+    display: block;
+}
+
+.error {
+    font-size: 14px;
+    color: #ff3b3b;
+    display: none;
+}
+
+.generate-btn {
+    border: none;
+    padding: 15px 30px;
+    background-color: #019f55;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.generate-btn i {
+    margin-right: 10px;
+}
+
+.generate-btn:hover {
+    background-color: #017a40;
+}
