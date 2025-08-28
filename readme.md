@@ -18,3 +18,5 @@ Here are some of the JavaScript mini-projects you'll find in this repo:
 - 📝 **To-do App**
 
 - 🍞 **Toast Message/Snack Bar**
+
+- 🎵 **Music Player**
