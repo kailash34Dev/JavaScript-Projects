@@ -24,3 +24,5 @@ Here are some of the JavaScript mini-projects you'll find in this repo:
 - ⛅ **Weather App**
 
 - ✅ **Email Password Validation**
+
+- 🖼️ **Image Background Change Effect**
