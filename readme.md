@@ -20,3 +20,5 @@ Here are some of the JavaScript mini-projects you'll find in this repo:
 - 🍞 **Toast Message/Snack Bar**
 
 - 🎵 **Music Player**
+
+- ⛅ **Weather App**

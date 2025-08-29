@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Weather App - Know Your Weather Instantly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="warning">
+        <p>Please use your own API keys for this project.</p>
+    </div>
+    <header>
+        <div class="header-text">
+            <h1>Weather App</h1>
+            <p>Know Your Weather, Instantly</p>
+        </div>
+    </header>
+    <main>
+        <div class="main-content-container">
+            <div class="card">
+                <form action="" method="post" id="location-form">
+                    <div class="location-input">
+                        <input type="text" id="city" placeholder="Enter city name">
+                        <button type="submit"><img src="images/search.png" alt="search-wheather"></button>
+                    </div>
+                </form>
+                <div class="weather-info">
+                    <div class="weather-icon">
+                        <img src="" id="weather-icon" alt="weather-icon">
+                    </div>
+                    <div id="weather-details">
+                        <h1 class="temperature" id="temperature"></h1>
+                        <h3 class="city-name" id="city-name"></h3>
+                        <div class="weather-description">
+                            <div class="description">
+                                <img src="images/humidity.png" alt="humidity-icon">
+                                <div>
+                                    <p id="humidity"></p>
+                                    <p class="secondary-text">Humidity</p>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <img src="images/wind.png" alt="humidity-icon">
+                                <div>
+                                    <p id="wind"></p>
+                                    <p class="secondary-text">Wind Speed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-text">
+        <p>&copy; 2025 Weather App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
