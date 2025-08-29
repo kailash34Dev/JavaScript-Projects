@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    background-image: url(bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.container header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container form {
+    margin-top: 30px;
+}
+
+form .field {
+    margin-bottom: 20px;
+}
+
+form .input-field {
+    height: 55px;
+    width: 100%;
+    position: relative;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 0px 15px;
+}
+
+.input-field input:focus {
+    border: 2px solid #4070f4;
+}
+
+.input-field .show-hide {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+}
+
+.field .error {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 5px;
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+
+.invalid .input-field input {
+    border-color: #d93025;
+}
+
+.valid .input-field input {
+    border-color: #34a853;
+}
+
+.invalid .error {
+    display: flex;
+}
+
+.field .password-error {
+    align-items: start;
+}
+
+.field .password-error i {
+    margin-top: 3px;
+}
+
+.field button {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #4070f4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.field button:hover {
+    background-color: #3a65d2;
+}

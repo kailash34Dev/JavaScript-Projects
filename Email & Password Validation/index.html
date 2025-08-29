@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email & Password Validation</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <header>Signup</header>
+        <form action="https://www.youtube.com/watch?v=UmFFTkjs-O0&list=PLItRnr5xWoIrZufU7FEPB1htDAI3QV5qr&index=2">
+            <div class="field email-field">
+                <div class="input-field">
+                    <input class="email" type="email" placeholder="Email">
+                </div>
+                <span class="error">
+                    <i class='bx bx-error-circle'></i>
+                    <p class="error-text">Please enter a valid email.</p>
+                </span>
+            </div>
+            <div class="field create-password-field">
+                <div class="input-field">
+                    <input class="create-password" type="password" placeholder="Password">
+                    <i class='bx bx-hide show-hide eye-icon'></i>
+                </div>
+                <span class="error">
+                    <i class='bx bx-error-circle'></i>
+                    <p class="error-text">Please enter atleast 8 character with number, symbol, small and capital
+                        capital letter.</p>
+                </span>
+            </div>
+            <div class="field confirm-password-field">
+                <div class="input-field ">
+                    <input class="confirm-password" type="password" placeholder="Confirm password">
+                    <i class='bx bx-hide show-hide eye-icon'></i>
+                </div>
+                <span class="error">
+                    <i class='bx bx-error-circle'></i>
+                    <p class="error-text">Password don't match</p>
+                </span>
+            </div>
+            <div class="field">
+                <div class="input-field">
+                    <button type="submit">Signup now</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -22,3 +22,5 @@ Here are some of the JavaScript mini-projects you'll find in this repo:
 - 🎵 **Music Player**
 
 - ⛅ **Weather App**
+
+- ✅ **Email Password Validation**
