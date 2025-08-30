@@ -26,3 +26,5 @@ Here are some of the JavaScript mini-projects you'll find in this repo:
 - ✅ **Email Password Validation**
 
 - 🖼️ **Image Background Change Effect**
+
+- 🔀 **Drag & Drop Lists**

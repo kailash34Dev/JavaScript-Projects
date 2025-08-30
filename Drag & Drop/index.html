@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Feature</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="left">
+            <div class="list" draggable="true">
+                <i class="fa-solid fa-list"></i>
+                List Item 1
+            </div>
+            <div class="list" draggable="true">
+                <i class="fa-solid fa-list"></i>
+                List Item 2
+            </div>
+            <div class="list" draggable="true">
+                <i class="fa-solid fa-list"></i>
+                List Item 3
+            </div>
+            <div class="list" draggable="true">
+                <i class="fa-solid fa-list"></i>
+                List Item 4
+            </div>
+        </div>
+        <div id="right"></div>
+    </div>
+    <script>
+        const lists = document.querySelectorAll(".list");
+        const rightBox = document.querySelector("#right");
+        const leftBox = document.querySelector("#left");
+        let selectedList = null;
+
+        lists.forEach((list) => {
+            list.addEventListener("dragstart", (e) => {
+                selectedList = e.target;
+            });
+        });
+
+        function enableDrop(box) {
+            box.addEventListener("dragover", e => {
+                e.preventDefault();
+            });
+
+            box.addEventListener("drop", e => {
+                if (selectedList) {
+                    box.appendChild(selectedList);
+                    selectedList = null;
+                }
+            });
+        }
+
+        enableDrop(rightBox);
+        enableDrop(leftBox);
+    </script>
+</body>
+
+</html>
