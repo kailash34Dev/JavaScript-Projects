@@ -15,6 +15,7 @@
 
 .img-box {
     width: 60%;
+    height: 75%;
     background: url(images/background.png);
     position: relative;
     overflow: hidden;
@@ -22,6 +23,7 @@
 
 .img-wrap {
     width: 50%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
