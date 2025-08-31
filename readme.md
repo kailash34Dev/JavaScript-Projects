@@ -28,3 +28,5 @@ Here are some of the JavaScript mini-projects you'll find in this repo:
 - 🖼️ **Image Background Change Effect**
 
 - 🔀 **Drag & Drop Lists**
+
+- 🔎 **Image Search Engine**
