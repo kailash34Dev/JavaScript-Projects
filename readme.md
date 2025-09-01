@@ -32,3 +32,5 @@ Here are some of the JavaScript mini-projects you'll find in this repo:
 - 🔎 **Image Search Engine**
 
 - ⏰ **Digital Clock**
+
+- 🎯 **Dropdown Menu**
