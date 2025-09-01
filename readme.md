@@ -34,3 +34,5 @@ Here are some of the JavaScript mini-projects you'll find in this repo:
 - ⏰ **Digital Clock**
 
 - 🎯 **Dropdown Menu**
+
+- ⭕ **Circular Progress Bar**

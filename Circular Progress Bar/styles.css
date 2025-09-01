@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #e3edf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.1),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#number {
+    font-weight: 600;
+    font-size: 20px;
+    color: #555;
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 15;
+    stroke-dasharray: 436;
+    stroke-dashoffset: 436;
+    animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 152;
+    }
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
