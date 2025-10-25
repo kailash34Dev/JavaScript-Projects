@@ -36,3 +36,5 @@ Here are some of the JavaScript mini-projects you'll find in this repo:
 - 🎯 **Dropdown Menu**
 
 - ⭕ **Circular Progress Bar**
+
+- ❌⭕ **Tic Tac Toe**
